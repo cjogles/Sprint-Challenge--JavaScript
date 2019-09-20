@@ -30,7 +30,7 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
-    .forEach is a method that will change each item of the array that you use in connection with this method. .map will make a new array with the desired changes.
+    .forEach is a method that will change each item of the array that you use in connection with this method. .map will make a new array with the desired changes. Each take a function that will be implemented on each item in the array or each object.
 
 2. What is the difference between a function and a method?
 
@@ -38,7 +38,7 @@ Edit this document to include your answers after each question. Make sure to lea
 
 3. What is closure?
 
-    closure is a name for a phenomenon where this happens: if a function references a variable and that variable was declared and assigned outside of its scope, then the function can look outwards to other data inside of a more distant type of scope that it has "enclosed". For instance if the function called for a variable "A" to be used and "A" was just outside of its scope that was used in a previous function execution context, the variable data is still there even though the execution context has popped off the execution stack from the last function finishing its code. That's why the function can search for "A" as the function with active scope has enclosed the area around it, that's why its called a closure. 
+    closure is a name for a phenomenon where this happens: if a function references a variable and that variable was declared and assigned outside of its scope, then the function can look outwards to other data inside of a more distant type of scope that it has "enclosed". For instance if the function called for a variable "A" to be used and "A" was just outside of its scope that was used in a previous function execution context, the variable data is still there even though the execution context has popped off the execution stack from the last function finishing its code. That's why the function can search for "A" as the function with active scope has enclosed the area around it, that's why its called a closure. Also of note, closure is a unique phenomenon to javascript and can only happen in nested functions. 
 
 4. Describe the four rules of the 'this' keyword.
 

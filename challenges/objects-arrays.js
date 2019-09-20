@@ -52,7 +52,7 @@ const graduates = [
 //Once you have the new array created, sort the universities alphabetically and log the result. 
 
 const universities = [];
-graduates.map(function(element) {
+graduates.map(element => {
   universities.push(element.university);
 })
 universities.sort();
@@ -64,7 +64,7 @@ The resulting contact information strings should have a space between the first 
 Log the result of your new array. */
 
 const contactInfo = [];
-graduates.map(function(element) {
+graduates.map(element => {
   contactInfo.push(element.first_name + " " + element.email);
 })
 console.log(contactInfo);
@@ -73,7 +73,7 @@ console.log(contactInfo);
 Create a new array called unisWithUni that contains them all. This will be an array of objects. Log the result. */
 
 const unisWithUni = [];
-graduates.map(function(elements) {
+graduates.map(elements => {
   if (elements.university.includes("Uni")) {
     unisWithUni.push(elements.university);
   }
@@ -108,7 +108,7 @@ follow this pattern: "Name: Jackal, asiatic, Scientific: Canis aureus."
 
 
 const displayNames = [];
-zooAnimals.forEach(function(zooAnimal) {
+zooAnimals.forEach(zooAnimal => {
   displayNames.push("Name: " + zooAnimal.animal_name + " Scientific: " + zooAnimal.scientific_name);
 })
 console.log(displayNames);
@@ -120,7 +120,7 @@ strings named lowCaseAnimalNames, each string following this pattern: "jackal, a
 */
 
 const lowCaseAnimalNames = [];
-zooAnimals.map(function(element) {
+zooAnimals.map(element => {
   lowCaseAnimalNames.push(element.animal_name.toLowerCase());
 });
 console.log(lowCaseAnimalNames);
@@ -132,7 +132,7 @@ lowPopulationAnimals which contains only the animals with a population less than
 */
 
 const lowPopulationAnimals = [];
-zooAnimals.filter(function(element) {
+zooAnimals.filter(element => {
   if (element.population < 5) {
     lowPopulationAnimals.push(element);
   }
@@ -147,7 +147,7 @@ and an initial value for the count.
 */
 
 let populationTotal = 0;
-populationTotal = zooAnimals.reduce(function(total, currentElement) {
+populationTotal = zooAnimals.reduce((total, currentElement) => {
   return total + currentElement.population;
 }, 0)
 console.log(populationTotal);
