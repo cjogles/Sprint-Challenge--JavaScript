@@ -30,32 +30,48 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+    .forEach is a method that will change each item of the array that you use in connection with this method. .map will make a new array with the desired changes. Each take a function that will be implemented on each item in the array or each object.
+
 2. What is the difference between a function and a method?
+
+    a method is a function that is connected to an object, usually as part of its prototype. A function alone is a bit of reusable code that executes code.
 
 3. What is closure?
 
+    closure is a name for a phenomenon where this happens: if a function references a variable and that variable was declared and assigned outside of its scope, then the function can look outwards to other data inside of a more distant type of scope that it has "enclosed". For instance if the function called for a variable "A" to be used and "A" was just outside of its scope that was used in a previous function execution context, the variable data is still there even though the execution context has popped off the execution stack from the last function finishing its code. That's why the function can search for "A" as the function with active scope has enclosed the area around it, that's why its called a closure. Also of note, closure is a unique phenomenon to javascript and can only happen in nested functions. 
+
 4. Describe the four rules of the 'this' keyword.
 
+    global/window binding: If you refer to this in the global execution context, the this variable automatically binds to the global object in node.js or to the window object in the browser.
+
+    implicit binding: if you refer to an object and then call on this."variableInObject", this will be referring to the object left of the dot automatically in dot notation.
+
+    explicit binding: using the .call, .apply, or .bind methods, you can explicity bind the this keyword to whatever you would like. 
+
+    new binding: this refers to the specefic instance of object that is going to be created with the new keyword. 
+
 5. Why do we need super() in an extended class?
+
+    super is a method used to make the object inherit the properties and methods of another object that has been targeted via the "extends" keyword. This will copy over the prototype methods as well. 
 
 ## Project Set up
 
 Follow these steps to set up and work on your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Add TL as collaborator on Github.
-- [ ] Clone your OWN version of Repo (Not Lambda's by mistake!).
-- [ ] Create a new Branch on the clone: git checkout -b `<firstName-lastName>`.
-- [ ] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
-- [ ] You are now ready to build this project with your preferred IDE
-- [ ] Implement the project on your Branch, committing changes regularly.
-- [ ] Push commits: git push origin `<firstName-lastName>`.
+- [x] Create a forked copy of this project.
+- [x] Add TL as collaborator on Github.
+- [x] Clone your OWN version of Repo (Not Lambda's by mistake!).
+- [x] Create a new Branch on the clone: git checkout -b `<firstName-lastName>`.
+- [x] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
+- [x] You are now ready to build this project with your preferred IDE
+- [x] Implement the project on your Branch, committing changes regularly.
+- [x] Push commits: git push origin `<firstName-lastName>`.
 
 Follow these steps for completing your project:
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo).
-- [ ] Add your team lead as a Reviewer on the Pull-request
-- [ ] TL then will count the HW as done by  merging the branch back into master.
+- [x] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo).
+- [x] Add your team lead as a Reviewer on the Pull-request
+- [x] TL then will count the HW as done by  merging the branch back into master.
 
 
 ## Minimum Viable Product
